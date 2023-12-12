@@ -13,12 +13,12 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = cinequiz
-build_property.ProjectDir = /Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/
+build_property.ProjectDir = /Users/aleksandrshchapov/RiderProjects/CineQuiz/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/App.axaml]
+[/Users/aleksandrshchapov/RiderProjects/CineQuiz/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/Views/MainWindow.axaml]
+[/Users/aleksandrshchapov/RiderProjects/CineQuiz/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

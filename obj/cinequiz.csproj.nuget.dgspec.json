@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/cinequiz.csproj": {}
+    "/Users/aleksandrshchapov/RiderProjects/CineQuiz/cinequiz.csproj": {}
   },
   "projects": {
-    "/Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/cinequiz.csproj": {
+    "/Users/aleksandrshchapov/RiderProjects/CineQuiz/cinequiz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/cinequiz.csproj",
+        "projectUniqueName": "/Users/aleksandrshchapov/RiderProjects/CineQuiz/cinequiz.csproj",
         "projectName": "cinequiz",
-        "projectPath": "/Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/cinequiz.csproj",
-        "packagesPath": "/Users/timofeyluchkin/.nuget/packages/",
-        "outputPath": "/Users/timofeyluchkin/RiderProjects/cinequiz/cinequiz/obj/",
+        "projectPath": "/Users/aleksandrshchapov/RiderProjects/CineQuiz/cinequiz.csproj",
+        "packagesPath": "/Users/aleksandrshchapov/.nuget/packages/",
+        "outputPath": "/Users/aleksandrshchapov/RiderProjects/CineQuiz/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/timofeyluchkin/.nuget/NuGet/NuGet.Config"
+          "/Users/aleksandrshchapov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
