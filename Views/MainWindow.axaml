@@ -2,5 +2,5 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="cinequiz.Views.MainWindow"
         Title="CineQuiz">
-    <TextBlock Text="Welcome to CineQuiz!" />
+    <TextBlock Text="Welcome to CineQuizываыаыва!" />
 </Window>
