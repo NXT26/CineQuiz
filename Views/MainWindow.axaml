@@ -2,31 +2,38 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="cinequiz.Views.MainWindow"
         Width="1440" Height="1024" 
+        Background="#FF9F01"
         Title="CineQuiz">
     
     <Grid RowDefinitions="Auto, *, Auto" Margin="20">
         <!-- Header -->
-        <Grid Grid.Row="0" Background="Aqua" Height="86" ColumnDefinitions="Auto, *, Auto, Auto">
-            <Label Grid.Column="0" FontWeight="Black" FontSize="40" Padding="20" Foreground="White">CineQuiz</Label>
-            <Label Grid.Column="2" FontWeight="Black" FontSize="36" Padding="20">Правила</Label>
-            <Label Grid.Column="3" FontWeight="Black" FontSize="36" Padding="20">История</Label>
-        </Grid>
+        <Panel Grid.Row="0">
+            <Rectangle Fill="#FF9002" Height="86" RadiusX="33" RadiusY="33" Stroke="#FF6D01" StrokeThickness="4"></Rectangle>
+            <Grid Height="86" ColumnDefinitions="Auto, *, Auto, Auto">
+                <Label Grid.Column="0" FontWeight="Bold" FontSize="40" Padding="20" Foreground="White">CineQuiz</Label>
+                <Label Grid.Column="2" FontWeight="Bold" FontSize="36" Padding="20">Правила</Label>
+                <Label Grid.Column="3" FontWeight="Bold" FontSize="36" Padding="20">История</Label>
+            </Grid>
+        </Panel>
         
         <!-- Main -->
-        <Grid Grid.Row="1" Background="Aquamarine" RowDefinitions="Auto, *" Margin="0,20">
-            <Label Grid.Row="0" HorizontalAlignment="Center" FontSize="36">Asdasdas</Label>
-            <Rectangle Grid.Row="1" Fill="Gold"></Rectangle>
+        <Grid Grid.Row="1" RowDefinitions="Auto, *" Margin="0,20">
+            <Label Grid.Row="0" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold">Игра викторина “Как хорошо ты знаешь кинематограф”</Label>
+            <Image Grid.Row="1" Stretch="Uniform" Source="../Assets/main_pic.png"/>
         </Grid>
         
         <!-- Footer -->
-        <Grid Grid.Row="2" Background="Chocolate" ColumnDefinitions="Auto, Auto, *, Auto" Height="86">
-            <Label Grid.Column="0" VerticalAlignment="Center" Margin="20" FontSize="36">Выберите режим:</Label>
-            <Grid Grid.Column="1" Background="NavajoWhite" ColumnDefinitions="Auto, Auto, Auto">
-                <Button Grid.Column="0" VerticalAlignment="Center" FontSize="36" Background="Blue" Margin="10, 0" Padding="20,0" Height="60" VerticalContentAlignment="Center">Стоп-Кадр</Button>
-                <Button Grid.Column="1" VerticalAlignment="Center" FontSize="36" Background="Red" Margin="0,0,10,0" Padding="20,0" Height="60" VerticalContentAlignment="Center">Рейтинг</Button>
-                <Button Grid.Column="2" VerticalAlignment="Center" FontSize="36" Background="DarkRed" Margin="0,0,10,0" Padding="20,0" Height="60" VerticalContentAlignment="Center">Сборы</Button>
-            </Grid>
-            <Button Grid.Column="3" Background="Blue" CornerRadius="20" VerticalContentAlignment="Center" Height="86" FontSize="36" Padding="60, 0">Играть</Button>
+        <Grid Grid.Row="2" ColumnDefinitions="Auto, Auto, *, Auto" Height="86">
+            <Label Grid.Column="0" VerticalAlignment="Center" Margin="20" FontSize="36" FontWeight="Bold">Выберите режим:</Label>
+            <Panel Grid.Column="1">
+                <Rectangle Fill="#FF9002" Height="86" RadiusX="33" RadiusY="33" Stroke="#FF6D01" StrokeThickness="4"></Rectangle>
+                <Grid ColumnDefinitions="Auto, Auto, Auto">
+                    <Button Grid.Column="0" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="#FF7902" CornerRadius="20" Margin="13,0, 10, 0" Padding="20,0" Height="60" VerticalContentAlignment="Center">Стоп-Кадр</Button>
+                    <Button Grid.Column="1" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="#FF7902" CornerRadius="20" Margin="0,0,10,0" Padding="20,0" Height="60" VerticalContentAlignment="Center">Рейтинг</Button>
+                    <Button Grid.Column="2" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Background="#FF7902" CornerRadius="20" Margin="0,0,13,0" Padding="20,0" Height="60" VerticalContentAlignment="Center">Сборы</Button>
+                </Grid>
+            </Panel>
+            <Button Grid.Column="3" Background="#5A189A" CornerRadius="33" BorderBrush="#3C096C" BorderThickness="4" VerticalContentAlignment="Center" Height="86" FontSize="36" FontWeight="Bold" Padding="60, 0">Играть</Button>
         </Grid>
     </Grid>
 
