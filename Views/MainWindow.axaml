@@ -1,6 +1,41 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="cinequiz.Views.MainWindow"
+        Width="1440" Height="1024" 
         Title="CineQuiz">
-    <TextBlock Text="Welcome to CineQuizываыаыва!" />
+    
+    <Grid RowDefinitions="Auto, *, Auto" Margin="20">
+        <!-- Header -->
+        <Grid Grid.Row="0" Background="Aqua" Height="86" ColumnDefinitions="Auto, *, Auto, Auto">
+            <StackPanel Background="Chartreuse" Grid.Column="0" VerticalAlignment="Center">
+                <Label FontWeight="Black" FontSize="40" Padding="20">CineQuiz</Label>
+            </StackPanel>
+            <Rectangle Grid.Column="1" Fill="Fuchsia" Width="90"></Rectangle>
+            <StackPanel Background="Chartreuse" Grid.Column="2" VerticalAlignment="Center">
+                <Label FontWeight="Black" FontSize="36" Padding="20">Правила</Label>
+            </StackPanel>
+            <StackPanel Background="Chartreuse" Grid.Column="3" VerticalAlignment="Center">
+                <Label FontWeight="Black" FontSize="36" Padding="20">История</Label>
+            </StackPanel>
+        </Grid>
+        
+        <!-- Main -->
+        <Grid Grid.Row="1" Background="Aquamarine" RowDefinitions="Auto, *" Margin="0,20">
+            <Label Grid.Row="0" HorizontalAlignment="Center" FontSize="40">Asdasdas</Label>
+            <Rectangle Grid.Row="1" Fill="Gold"></Rectangle>
+        </Grid>
+        
+        <!-- Footer -->
+        <Grid Grid.Row="2" Background="Chocolate" ColumnDefinitions="Auto, Auto, *, Auto" Height="86">
+            <Label Grid.Column="0" VerticalAlignment="Center" Margin="20" FontSize="36">Выберите режим</Label>
+            <Grid Grid.Column="1" Background="NavajoWhite" ColumnDefinitions="Auto, Auto, Auto">
+                <Label Grid.Column="0" VerticalAlignment="Center" FontSize="36">Стоп-Кадр</Label>
+                <Label Grid.Column="1" VerticalAlignment="Center" FontSize="36">Рейтинг</Label>
+                <Label Grid.Column="2" VerticalAlignment="Center" FontSize="36">Сборы</Label>
+            </Grid>
+            <Rectangle Grid.Column="2" Fill="Firebrick" Width="90"></Rectangle>
+            <Label Grid.Column="3" VerticalAlignment="Center" Background="Blue" CornerRadius="20">Играть</Label>
+        </Grid>
+    </Grid>
+
 </Window>
