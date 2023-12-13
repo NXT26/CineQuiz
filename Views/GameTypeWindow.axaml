@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Width="1440"
+        Height="1024" 
+        Background="#FF9F01"
+        x:Class="cinequiz.Views.GameTypeWindow"
+        Title="GameTypeWindow">
+<Grid RowDefinitions="Auto, *" Margin="20">
+        <!-- Header -->
+        <Panel Grid.Row="0">
+            <Rectangle Fill="#FF9002" Height="86" RadiusX="33" RadiusY="33" Stroke="#FF6D01" StrokeThickness="4"></Rectangle>
+            <Grid Height="86" ColumnDefinitions="Auto, *, Auto">
+                <Label Grid.Column="0" FontWeight="Bold" FontSize="40" Padding="20" Foreground="White">CineQuiz</Label>
+                <Label Grid.Column="2" FontWeight="Bold" FontSize="36" Padding="20">Правила</Label>
+            </Grid>
+        </Panel>
+        
+        <!-- Main -->
+        <Grid Grid.Row="1" RowDefinitions="Auto, *" Margin="0,20" VerticalAlignment="Center">
+            <Label Grid.Row="0" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold">Какой список фильмов?</Label>
+            <Grid Grid.Row="1" ColumnDefinitions="Auto, Auto" HorizontalAlignment="Center" Margin="20">
+                <Button Grid.Column="0" Background="#5A189A" CornerRadius="33" BorderBrush="#3C096C" BorderThickness="4" VerticalContentAlignment="Center" Height="86" FontSize="36" FontWeight="Bold" Padding="66, 0" Margin="0,0,20,0">Играть</Button>
+                <Button Grid.Column="1" Background="#5A189A" CornerRadius="33" BorderBrush="#3C096C" BorderThickness="4" VerticalContentAlignment="Center" Height="86" FontSize="36" FontWeight="Bold" Padding="66, 0">Играть</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
